@@ -1,3 +1,3 @@
-FROM hello-world
-ENV name Docker hello-world from github dockerfile builded
-CMD echo "hello $name"
+FROM alpine:3.14
+RUN apk add --no-cache mysql-client
+ENTRYPOINT ["mysql"]
