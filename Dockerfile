@@ -1,3 +1,3 @@
 FROM scratch
-ENV name hello docker from githubdockerfile
+ENV name githubdockerfile
 RUN echo $name
